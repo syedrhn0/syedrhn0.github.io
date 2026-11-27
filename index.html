@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Syed Rehan Syed Hamedsaleem — Aspiring Data Analyst. Python, SQL, Power BI, Machine Learning. Based in Beed, Maharashtra, India.">
+    <meta name="author" content="Syed Rehan Syed Hamedsaleem">
+    <title>Syed Rehan | Data Analyst</title>
+    <!-- theme: runs before first paint. Default is light; only a saved choice switches it -->
+    <script>
+        (function () {
+            var theme = "light";
+            try {
+                var saved = localStorage.getItem("theme");
+                if (saved === "dark" || saved === "light") { theme = saved; }
+            } catch (e) { /* storage blocked: stay on light */ }
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
+    <!-- Plus Jakarta Sans (used by the projects section) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css?v=20261126">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Syed Rehan</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#certifications">Certifications</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+            <!-- Pull-rope theme switch (copied from Dharun's portfolio): drag the wooden handle down and release -->
+            <div class="theme-rope-slot">
+                <div aria-label="Pull to switch to dark mode" id="themeRope" role="button" tabindex="0">
+                    <svg aria-label="Pull rope theme switch" role="img" viewBox="12 6 32 134">
+                        <defs>
+                            <linearGradient id="cordGrad" x1="0" x2="1"><stop offset="0" stop-color="#8e8b80"></stop><stop offset=".35" stop-color="#f0eadb"></stop><stop offset=".62" stop-color="#c7c0af"></stop><stop offset="1" stop-color="#777267"></stop></linearGradient>
+                            <linearGradient id="woodGrad" x1="0" x2="1"><stop offset="0" stop-color="#6c4727"></stop><stop offset=".25" stop-color="#d6a46a"></stop><stop offset=".55" stop-color="#a87542"></stop><stop offset=".85" stop-color="#e3b47b"></stop><stop offset="1" stop-color="#65401f"></stop></linearGradient>
+                        </defs>
+                        <path d="M 28 0 C 28 35 28 80 28 112" fill="none" id="ropeShadow" stroke="rgba(0,0,0,.28)" stroke-linecap="round" stroke-width="5"></path>
+                        <path d="M 28 0 C 28 35 28 80 28 112" fill="none" id="ropeCord" stroke="url(#cordGrad)" stroke-linecap="round" stroke-width="2.2"></path>
+                        <path d="M 28 0 C 28 35 28 80 28 112" fill="none" id="ropeHighlight" stroke="rgba(255,255,255,.55)" stroke-width=".7"></path>
+                        <g class="rope-hit" id="ropeHandle" transform="translate(0 0)">
+                            <path d="M24 110 Q28 105 32 110 L32 116 Q28 120 24 116 Z" fill="#969184" stroke="#4a463d" stroke-width=".8"></path>
+                            <rect class="rope-knob" fill="url(#woodGrad)" height="25" rx="5" stroke="#684522" stroke-width=".8" width="12" x="22" y="114"></rect>
+                            <ellipse cx="28" cy="116" fill="#e2b67e" opacity=".6" rx="5.7" ry="2"></ellipse>
+                            <path d="M25 119 Q27 130 25 134" fill="none" stroke="rgba(255,255,255,.35)" stroke-width=".8"></path>
+                            <rect fill="transparent" height="35" width="18" x="19" y="108"></rect>
+                        </g>
+                    </svg>
+                    <span class="rope-label" aria-hidden="true">PULL TO SWITCH</span>
+                </div>
+            </div>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Syed Rehan</span>
+            </h1>
+            <p class="header-subtitle">ASPIRING DATA ANALYST</p>
+            <p class="header-intro">Engineering background &bull; Python &bull; SQL &bull; Power BI &bull; Machine Learning</p>
+            <div class="header-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Projects</a>
+                <a href="assets/docs/Syed_Rehan_Data_Analyst_Resume.pdf" download
+                    class="btn btn-primary">View Resume</a>
+            </div>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/about-data-analyst.png" class="about-img"
+                        alt="Syed Rehan Syed Hamedsaleem — Data Analyst">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I'm Syed Rehan, an aspiring Data Analyst with a background in Civil Engineering. After
+                        completing my B.E. and M.Tech in Structural Engineering, I worked as a Civil Engineer
+                        at Rahul Bora Engineers &amp; Associates, where I used Excel automation and structured
+                        reporting to manage calculations and documentation for more than 40 structural members.
+                    </p>
+                    <p>
+                        That hands-on experience with data and patterns sparked a genuine interest in analytics.
+                        I went on to complete a Postgraduate Program in Machine Learning and Artificial Intelligence
+                        at Imarticus Learning, building skills in Python, SQL, statistics, machine learning and
+                        data visualization. I now focus on practical projects that turn raw data into clear,
+                        actionable insights.
+                    </p>
+                    <a href="assets/docs/Syed_Rehan_Data_Analyst_Resume.pdf" download
+                        class="btn-rounded btn btn-outline-primary mt-4">
+                        <i class="ti-export mr-2"></i> Download Resume
+                    </a>
+                </div>
+            </div><!-- end of about wrapper -->
+
+            <!-- Education (now part of About) -->
+            <div class="about-extra" id="education">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h3 class="about-subheading">Education</h3>
+                    </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="edu-card">
+                        <p class="edu-degree">B.E. Civil Engineering</p>
+                        <p class="edu-institution">Civil Engineering</p>
+                        <p class="edu-year">
+                            <i class="ti-calendar mr-1"></i> 2014 &ndash; 2018
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="edu-card">
+                        <p class="edu-degree">M.Tech Structural Engineering</p>
+                        <p class="edu-institution">Structural Engineering</p>
+                        <p class="edu-year">
+                            <i class="ti-calendar mr-1"></i> 2018 &ndash; 2021
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="edu-card edu-card-highlight">
+                        <span class="edu-badge">Current</span>
+                        <p class="edu-degree">PGP in ML &amp; AI</p>
+                        <p class="edu-institution">Imarticus Learning</p>
+                        <p class="edu-track">Advanced ML &amp; AI Track</p>
+                        <p class="edu-year">
+                            <i class="ti-calendar mr-1"></i> 2025 &ndash; 2026
+                        </p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- Experience (now part of About) -->
+            <div class="about-extra" id="experience">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h3 class="about-subheading">Experience</h3>
+
+                    <div class="experience-card">
+                        <!-- Card header -->
+                        <div class="experience-header">
+                            <div class="experience-title-block">
+                                <h5 class="experience-job-title">Civil Engineer</h5>
+                                <p class="experience-company">
+                                    <i class="ti-briefcase mr-1"></i>
+                                    Rahul Bora Engineers &amp; Associates
+                                </p>
+                                <p class="experience-location">
+                                    <i class="ti-location-pin mr-1"></i>
+                                    Beed, Maharashtra, India
+                                </p>
+                            </div>
+                            <div class="experience-period-block">
+                                <span class="experience-period">Jun 2022 &ndash; Jul 2024</span>
+                            </div>
+                        </div><!-- end of card header -->
+
+                        <!-- Card body -->
+                        <div class="experience-body">
+                            <ul class="experience-list">
+                                <li>Prepared architectural plans and supported structural engineering calculations.</li>
+                                <li>Automated Excel-based calculation workflows, reducing repetitive manual data entry and updates.</li>
+                                <li>Developed structured handover sheets to organise design outputs for more than 40 structural members.</li>
+                                <li>Created Excel formulas and dropdown-based inputs to simplify calculations and improve consistency.</li>
+                                <li>Prepared material quantity and cost estimation sheets to support project planning and tracking.</li>
+                                <li>Organised technical information into structured reports and spreadsheets for easier review and handover.</li>
+                            </ul>
+
+                            <div class="experience-tools">
+                                <span class="experience-tools-label">Tools used:</span>
+                                <span class="skill-tag">Microsoft Excel</span>
+                                <span class="skill-tag">AutoCAD</span>
+                                <span class="skill-tag">Engineering Calculation Tools</span>
+                            </div>
+                        </div><!-- end of card body -->
+                    </div><!-- end of experience-card -->
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of container -->
+    </section><!-- end of about section -->
+
+    <!-- education section -->
+    
+
+
+    <!-- experience section -->
+    
+
+
+    <!-- skills section -->
+    <section class="section" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Work With ?</p>
+            <h6 class="section-title mb-6">Technical Skills</h6>
+
+            <div class="row text-left">
+
+                <!-- Category 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-agenda mr-2"></i>Programming &amp; Data Analysis
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-bar-chart mr-2"></i>Visualization &amp; Reporting
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-search mr-2"></i>Statistics &amp; Analytics
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Descriptive Statistics</span>
+                            <span class="skill-tag">Exploratory Data Analysis</span>
+                            <span class="skill-tag">Data Cleaning</span>
+                            <span class="skill-tag">Data Transformation</span>
+                            <span class="skill-tag">Data Interpretation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-settings mr-2"></i>Machine Learning
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Regression</span>
+                            <span class="skill-tag">Classification</span>
+                            <span class="skill-tag">Decision Trees</span>
+                            <span class="skill-tag">Random Forest</span>
+                            <span class="skill-tag">KNN</span>
+                            <span class="skill-tag">SVM</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">K-Means Clustering</span>
+                            <span class="skill-tag">Model Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-wand mr-2"></i>AI &amp; Deep Learning
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">CNN</span>
+                            <span class="skill-tag">RNN</span>
+                            <span class="skill-tag">LSTM</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Generative AI</span>
+                            <span class="skill-tag">RAG Fundamentals</span>
+                            <span class="skill-tag">PyTorch Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category-card">
+                        <p class="skill-category-title">
+                            <i class="ti-desktop mr-2"></i>Tools &amp; Platforms
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Jupyter Notebook</span>
+                            <span class="skill-tag">Snowflake</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end of skills row -->
+        </div><!-- end of container -->
+    </section><!-- end of skills section -->
+
+    <!-- certifications section: auto-sliding certificate cards (hover to pause, click to open the original PDF) -->
+    <section class="section" id="certifications">
+        <div class="container text-center">
+            <p class="section-subtitle">Verified Credentials</p>
+            <h6 class="section-title mb-6">Certifications</h6>
+            <p class="cm-hint">Hover to pause, click to open the original certificate.</p>
+        </div>
+        <div class="cm-viewport" id="cert-marquee" role="region" aria-label="Certificates">
+            <div class="cm-track">
+                    <a class="cm-card" href="assets/certificates/imarticus-pgp-ml-ai.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: Postgraduate Program in Machine Learning &amp; Artificial Intelligence – Imarticus Learning, 2025 – 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/imarticus-pgp-ml-ai.webp" width="900" height="637" alt="Certificate preview: Postgraduate Program in Machine Learning &amp; Artificial Intelligence" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>Imarticus Learning</span></span>
+                                <span class="cm-title">Postgraduate Program in Machine Learning &amp; Artificial Intelligence</span>
+                                <span class="cm-date">2025 – 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/hackerrank-orchestrate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: HackerRank Orchestrate – Final Rank #1833 – HackerRank, Oct 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/hackerrank-orchestrate.webp" width="900" height="636" alt="Certificate preview: HackerRank Orchestrate – Final Rank #1833" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>HackerRank</span></span>
+                                <span class="cm-title">HackerRank Orchestrate – Final Rank #1833</span>
+                                <span class="cm-date">Oct 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/google-gen-ai-academy-apac.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: Google Cloud Gen AI Academy APAC – Google Cloud × Hack2skill, Sep 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/google-gen-ai-academy-apac.webp" width="900" height="675" alt="Certificate preview: Google Cloud Gen AI Academy APAC" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>Google Cloud × Hack2skill</span></span>
+                                <span class="cm-title">Google Cloud Gen AI Academy APAC</span>
+                                <span class="cm-date">Sep 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/tcs-ion-career-edge.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: Career Edge – Young Professional – TCS iON, Sep 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/tcs-ion-career-edge.webp" width="900" height="637" alt="Certificate preview: Career Edge – Young Professional" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>TCS iON</span></span>
+                                <span class="cm-title">Career Edge – Young Professional</span>
+                                <span class="cm-date">Sep 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/ibm-data-analysis-techniques.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: Data Analysis Techniques – IBM SkillsBuild, Aug 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/ibm-data-analysis-techniques.webp" width="900" height="556" alt="Certificate preview: Data Analysis Techniques" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>IBM SkillsBuild</span></span>
+                                <span class="cm-title">Data Analysis Techniques</span>
+                                <span class="cm-date">Aug 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/cisco-intro-to-data-science.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: Introduction to Data Science – Cisco Networking Academy, Aug 2026 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/cisco-intro-to-data-science.webp" width="900" height="610" alt="Certificate preview: Introduction to Data Science" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>Cisco Networking Academy</span></span>
+                                <span class="cm-title">Introduction to Data Science</span>
+                                <span class="cm-date">Aug 2026</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+                    <a class="cm-card" href="assets/certificates/hackerrank-sql-intermediate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open original certificate: SQL (Intermediate) Skill Certification – HackerRank, Jul 2025 (PDF, opens in a new tab)">
+                        <span class="cm-thumb">
+                            <img src="assets/certificates/hackerrank-sql-intermediate.webp" width="900" height="686" alt="Certificate preview: SQL (Intermediate) Skill Certification" draggable="false">
+                            <span class="cm-open"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg><span>Open Original PDF</span></span>
+                        </span>
+                        <span class="cm-meta">
+                            <span class="cm-text">
+                                <span class="cm-issuer"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="6" r="3.6"></circle><path d="M5.8 9l-1 5 3.2-1.8L11.2 14l-1-5"></path></svg><span>HackerRank</span></span>
+                                <span class="cm-title">SQL (Intermediate) Skill Certification</span>
+                                <span class="cm-date">Jul 2025</span>
+                            </span>
+                            <span class="cm-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></span>
+                        </span>
+                    </a>
+            </div>
+        </div>
+    </section><!-- end of certifications section -->
+
+    <!-- portfolio / projects section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I've Built ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+
+            <!-- Category filter tabs -->
+            <div id="project-filters" class="jd-filters" role="group" aria-label="Filter projects by category">
+                <button type="button" class="jd-filter-btn active jd-squishy" data-category="All" aria-pressed="true">All</button>
+                <button type="button" class="jd-filter-btn jd-squishy" data-category="AI &amp; ML" aria-pressed="false">AI &amp; ML</button>
+                <button type="button" class="jd-filter-btn jd-squishy" data-category="Data Analytics" aria-pressed="false">Data Analytics</button>
+            </div>
+
+            <!-- Projects grid (card style, tilt, hover overlay and filters modelled on jaidev-s-portfolio.vercel.app) -->
+            <div id="projects-grid" class="jd-grid">
+                <!-- Project 1: Dark Store Inventory Intelligence -->
+                <div class="jd-card" data-tilt data-category="AI &amp; ML">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/dark-store-800.webp"
+                            srcset="assets/imgs/projects/dark-store-800.webp 800w, assets/imgs/projects/dark-store-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="1133" alt="Dark Store Inventory Intelligence project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">Python</span>
+                                    <span class="jd-tag">Pandas</span>
+                                    <span class="jd-tag">NumPy</span>
+                                    <span class="jd-tag">Scikit-learn</span>
+                                    <span class="jd-tag">XGBoost</span>
+                                    <span class="jd-tag">Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">Dark Store Inventory Intelligence</h3>
+                            <p class="jd-desc">An ML-powered inventory management system that predicts stockout risks within 48 hours and recommends optimal reorder quantities. Helps businesses reduce stock shortages and make smarter inventory decisions.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/Dark-Store-Inventory-Intelligence-System" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of Dark Store Inventory Intelligence (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                            <a href="https://dark-store-inventory-intelligence-system.streamlit.app/" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-live jd-squishy" aria-label="Live app of Dark Store Inventory Intelligence (opens in a new tab)"><span>Live App</span><svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 3H4.5A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5V9M9.5 2.5H13.5V6.5M13.5 2.5L7.5 8.5"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: The AI Layoff Myth – What the Data Actually Says -->
+                <div class="jd-card" data-tilt data-category="Data Analytics">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/ai-layoff-800.webp"
+                            srcset="assets/imgs/projects/ai-layoff-800.webp 800w, assets/imgs/projects/ai-layoff-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="1172" alt="The AI Layoff Myth – What the Data Actually Says project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">MySQL</span>
+                                    <span class="jd-tag">Power BI</span>
+                                    <span class="jd-tag">DAX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">The AI Layoff Myth – What the Data Actually Says</h3>
+                            <p class="jd-desc">An interactive data analytics project exploring global layoff trends from 2020–2026 and examining the role of AI in workforce reductions. Uses SQL and Power BI to uncover patterns, challenge assumptions, and turn raw data into meaningful insights.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/The-AI-Layoff-Myth-What-the-Data-Actually-Says" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of The AI Layoff Myth – What the Data Actually Says (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: AI Data Analyst Interview Coach -->
+                <div class="jd-card" data-tilt data-category="AI &amp; ML">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/interview-coach-800.webp"
+                            srcset="assets/imgs/projects/interview-coach-800.webp 800w, assets/imgs/projects/interview-coach-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="1142" alt="AI Data Analyst Interview Coach project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">Python</span>
+                                    <span class="jd-tag">Streamlit</span>
+                                    <span class="jd-tag">Groq LLM</span>
+                                    <span class="jd-tag">Speech Recognition</span>
+                                    <span class="jd-tag">Text-to-Speech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">AI Data Analyst Interview Coach</h3>
+                            <p class="jd-desc">An AI-powered interview practice application that conducts voice-based mock interviews and evaluates responses using LLMs. Provides instant feedback, performance insights, and personalized suggestions to help candidates improve their interview skills.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/AI-Data-Analyst-Interview-Coach" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of AI Data Analyst Interview Coach (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: DMart Sales Performance Dashboard -->
+                <div class="jd-card" data-tilt data-category="Data Analytics">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/dmart-800.webp"
+                            srcset="assets/imgs/projects/dmart-800.webp 800w, assets/imgs/projects/dmart-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="1015" alt="DMart Sales Performance Dashboard project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">Python</span>
+                                    <span class="jd-tag">Pandas</span>
+                                    <span class="jd-tag">Power BI</span>
+                                    <span class="jd-tag">DAX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">DMart Sales Performance Dashboard</h3>
+                            <p class="jd-desc">An interactive retail analytics solution designed to explore sales performance, product trends, and business KPIs. Transforms raw sales data into actionable insights through data cleaning, analysis, and interactive Power BI visualizations.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/DMart-Sales-Performance-Dashboard" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of DMart Sales Performance Dashboard (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Construction Project Delay Risk Prediction -->
+                <div class="jd-card" data-tilt data-category="Data Analytics">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/construction-800.webp"
+                            srcset="assets/imgs/projects/construction-800.webp 800w, assets/imgs/projects/construction-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="1038" alt="Construction Project Delay Risk Prediction project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">SQL</span>
+                                    <span class="jd-tag">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">Construction Project Delay Risk Prediction</h3>
+                            <p class="jd-desc">A construction analytics project designed to identify potential project delays by examining key risk factors and project performance indicators. Combines data analysis and interactive visualizations to support better planning and risk assessment.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/Construction-Project-Delay-Risk-Prediction-System" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of Construction Project Delay Risk Prediction (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Customer 360 &amp; Next Best Action Engine -->
+                <div class="jd-card" data-tilt data-category="Data Analytics">
+                    <div class="jd-img-wrapper">
+                        <img src="assets/imgs/projects/customer-360-800.webp"
+                            srcset="assets/imgs/projects/customer-360-800.webp 800w, assets/imgs/projects/customer-360-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="971" alt="Customer 360 &amp; Next Best Action Engine project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">Snowflake</span>
+                                    <span class="jd-tag">SQL</span>
+                                    <span class="jd-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">Customer 360 &amp; Next Best Action Engine</h3>
+                            <p class="jd-desc">A customer intelligence solution that integrates customer profiles, purchases, interactions, and complaints into a unified view. Uses customer insights to identify segments and recommend personalized next-best actions for improved engagement and retention.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/Customer-360-and-Next-Best-Action-Engine" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of Customer 360 &amp; Next Best Action Engine (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Coffee Barista AI Agent -->
+                <div class="jd-card" data-tilt data-category="AI &amp; ML">
+                    <div class="jd-img-wrapper jd-img-fit" style="--jd-fit-top: #f4e8de; --jd-fit-bottom: #d1b8a4;">
+                        <img src="assets/imgs/projects/coffee-barista-800.webp"
+                            srcset="assets/imgs/projects/coffee-barista-800.webp 800w, assets/imgs/projects/coffee-barista-1600.webp 1600w"
+                            sizes="(min-width: 992px) 360px, (min-width: 576px) 50vw, 100vw"
+                            width="1600" height="866" alt="Coffee Barista AI Agent project preview">
+                        <div class="jd-overlay">
+                            <div class="jd-tags" aria-label="Tech stack">
+                                    <span class="jd-tag">Python</span>
+                                    <span class="jd-tag">LLM</span>
+                                    <span class="jd-tag">Streamlit</span>
+                                    <span class="jd-tag">Voice Interaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jd-body">
+                        <div>
+                            <h3 class="jd-title">Coffee Barista AI Agent</h3>
+                            <p class="jd-desc">An interactive AI-powered coffee assistant that helps users discover, customize, and order beverages through natural conversations. Understands customer preferences and provides personalized drink recommendations through an engaging conversational interface.</p>
+                        </div>
+                        <div class="jd-footer">
+                            <a href="https://github.com/syedrhn0/Coffee-Barista-Agent" target="_blank" rel="noopener noreferrer" class="jd-btn jd-btn-details jd-squishy" aria-label="Code repository of Coffee Barista AI Agent (opens in a new tab)"><span>Code Repo</span><svg viewBox="0 0 512 512" width="14" height="14" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of projects grid -->
+
+        </div><!-- end of container -->
+    </section><!-- end of portfolio section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">Get In Touch</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+
+            <!-- Email + Phone info cards -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon">
+                            <i class="ti-email"></i>
+                        </div>
+                        <div class="contact-detail-text">
+                            <span class="contact-detail-label">My Email</span>
+                            <span class="contact-detail-value">syedrhn0@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon">
+                            <i class="ti-mobile"></i>
+                        </div>
+                        <div class="contact-detail-text">
+                            <span class="contact-detail-label">Call Me</span>
+                            <span class="contact-detail-value">+91 8446581996</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of info cards row -->
+
+
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <!-- Footer nav links (centered, greeky_next style) -->
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <!-- social icons (exact copy of geeky-nextjs Social component: Ionicons 5, same markup/styles) -->
+            <div class="tpl-socials-wrap">
+                <ul class="tpl-socials">
+                    <li class="inline-block">
+                        <a aria-label="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/syedrhn0/" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a aria-label="github" title="GitHub" href="https://github.com/syedrhn0" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a aria-label="kaggle" title="Kaggle" href="https://www.kaggle.com/syedrhn0" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M130.4 33.1L128.5 36.5L128.5 475.1L129.6 477.8L133.0 479.6L181.9 479.6L184.1 478.9L186.0 477.0L186.7 474.4L186.7 377.7L212.9 352.7L214.0 352.3L312.6 477.4L317.4 479.6L380.5 479.6L383.1 477.8L382.0 470.7L254.3 312.0L376.8 193.7L377.9 191.0L377.1 187.3L376.0 185.8L373.4 184.7L309.9 184.7L306.2 186.2L187.1 306.0L186.7 37.2L186.0 34.6L184.1 32.7L182.3 32.0L133.0 32.0Z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a aria-label="medium" title="Medium" href="https://medium.com/@syedrhn0" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M28 28v456h456V28H28zm378.83 108.04l-24.46 23.45a7.162 7.162 0 00-2.72 6.86v172.28c-.44 2.61.61 5.26 2.72 6.86l23.88 23.45v5.15H286.13v-5.15l24.74-24.02c2.43-2.43 2.43-3.15 2.43-6.86V198.81l-68.79 174.71h-9.3l-80.09-174.71v117.1c-.67 4.92.97 9.88 4.43 13.44l32.18 39.03v5.15h-91.24v-5.15l32.18-39.03c3.44-3.57 4.98-8.56 4.15-13.44V180.5c.38-3.76-1.05-7.48-3.86-10.01l-28.6-34.46v-5.15h88.81l68.65 150.55 60.35-150.55h84.66v5.16z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a aria-label="instagram" title="Instagram" href="https://www.instagram.com/_syedrehan" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"></path><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Copyright -->
+            <p class="footer-copyright">
+                &copy; <script>document.write(new Date().getFullYear())</script>
+                Syed Rehan Syed Hamedsaleem. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer><!-- end of site footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js?v=20261126"></script>
+
+</body>
+
+</html>
